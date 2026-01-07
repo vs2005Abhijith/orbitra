@@ -38,7 +38,7 @@ const BlogTitles = ({ makeAuthenticatedRequest }) => {
       const fullPrompt = `Generate blog titles for keyword "${input}" in ${selectedCategory} category`
 
       const res = await makeAuthenticatedRequest(
-        'http://localhost:3000/api/ai/generate-blog-title',
+        'https://orbitra-nine.vercel.app/api/ai/generate-blog-title',
         {
           method: 'POST',
           body: JSON.stringify({ prompt: fullPrompt })

@@ -32,7 +32,7 @@ const WriteArticle = ({ makeAuthenticatedRequest }) => {
         }
       )*/
      const res = await makeAuthenticatedRequest(
-  'http://localhost:3000/api/ai/generate-article',
+  'https://orbitra-nine.vercel.app/api/ai/generate-article',
   {
     method: 'POST',
     headers: {

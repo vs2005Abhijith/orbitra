@@ -21,7 +21,7 @@ const RemoveBackground = () => {
       formData.append('image', file)
 
       const res = await axios.post(
-        'http://localhost:3000/api/ai/remove-background',
+        'https://orbitra-nine.vercel.app/api/ai/remove-background',
         formData
       )
 

@@ -39,7 +39,7 @@ const GenerateImages = ({ makeAuthenticatedRequest }) => {
       const fullPrompt = `${input}, ${selectedStyle} style`
 
       const res = await makeAuthenticatedRequest(
-        'http://localhost:3000/api/ai/generate-image',
+        'https://orbitra-nine.vercel.app/api/ai/generate-image',
         {
           method: 'POST',
           body: JSON.stringify({
